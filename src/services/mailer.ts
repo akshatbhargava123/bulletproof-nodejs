@@ -5,7 +5,7 @@ import { IUser } from '../interfaces/IUser';
 export default class MailerService {
   constructor(
     @Inject('emailClient') private emailClient
-  ) {}
+  ) { }
 
   public SendWelcomeEmail(email) {
     /**
@@ -22,6 +22,7 @@ export default class MailerService {
     this.emailClient.messages().send(data);
     return { delivered: 1, status: 'ok' };
   }
+
   public StartEmailSequence(sequence: string, user: Partial<IUser>) {
     if (!user.email) {
       throw new Error('No email provided');

@@ -36,30 +36,32 @@ export default {
   /**
    * Agenda.js stuff
    */
-  agenda: {
-    dbCollection: process.env.AGENDA_DB_COLLECTION,
-    pooltime: process.env.AGENDA_POOL_TIME,
-    concurrency: parseInt(process.env.AGENDA_CONCURRENCY, 10),
-  },
+  // agenda: {
+  //   dbCollection: process.env.AGENDA_DB_COLLECTION,
+  //   pooltime: process.env.AGENDA_POOL_TIME,
+  //   concurrency: parseInt(process.env.AGENDA_CONCURRENCY, 10),
+  // },
 
   /**
-   * Agendash config
+   * Agendash config - not needed yet
    */
-  agendash: {
-    user: 'agendash',
-    password: '123456'
-  },
+  // agendash: {
+  //   user: 'agendash',
+  //   password: '123456'
+  // },
+
   /**
    * API configs
    */
   api: {
     prefix: '/api',
   },
+
   /**
-   * Mailgun email credentials
+   * Mailgun email credentials - maybe later?
    */
-  emails: {
-    apiKey: 'API key from mailgun',
-    domain: 'Domain Name from mailgun'
-  }
+  // emails: {
+  //   apiKey: 'API key from mailgun',
+  //   domain: 'Domain Name from mailgun'
+  // }
 };
